@@ -13,14 +13,6 @@ public class Students implements Comparable<Students>{
 		this.marks = marks;
 	}
 	 
-	@Override
-	public int compareTo(Students o) {
-		// TODO Auto-generated method stub
-		return this.id - o.id;
-	}
-	
-	
-	
 	public int getId() {
 		return id;
 	}
@@ -56,6 +48,14 @@ public class Students implements Comparable<Students>{
 	@Override
 	public String toString() {
 		return "The student id is " + id + ", name is " + name + ", standard is " + standard + ", marks is " + marks ;
+	}
+
+
+
+	@Override
+	public int compareTo(Students o) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 	 
