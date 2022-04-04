@@ -4,11 +4,13 @@ import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Displaying extends Students {
+public class Portal extends Students {
 
-	public Displaying(int id, String name, String standard, int marks) {
+	public Portal(int id, String name, String standard, int marks) {
 		super(id, name, standard, marks);
+		// TODO Auto-generated constructor stub
 	}
+ 
 
 	static void options() {
 		System.out.println("Enter the number to perform opertaion");
@@ -16,7 +18,7 @@ public class Displaying extends Students {
 		System.out.println("enter 2 for edit student");
 		System.out.println("enter 3 for delete student");
 		System.out.println("enter 4 for print list of students");
-		System.out.println("enter 5 for get student details");
+		System.out.println("enter 5 for getting individual student details");
 		System.out.println("enter 6 for Sorting the list of student");
 		System.out.println("enter 7 for exit");
 	}
@@ -29,7 +31,7 @@ public class Displaying extends Students {
 		
 		ArrayList<Students>listOfStudents = new ArrayList<Students>();
 		
-		Displaying.options();
+		Portal.options();
 		
 		Scanner scan = new Scanner(System.in);
 		
@@ -44,27 +46,27 @@ public class Displaying extends Students {
 			
 			case 1:  
 				new AddingStudent(listOfStudents);
-				Displaying.nextOperation();
+				Portal.nextOperation();
 				break;
 			case 2:  
 				new Modifying(listOfStudents); 
-				Displaying.nextOperation();
+				Portal.nextOperation();
 				break;
 			case 3:  
 				new Deleting(listOfStudents); 
-				Displaying.nextOperation();
+				Portal.nextOperation();
 				break;
 			case 4: 
 				new Listing(listOfStudents);
-				Displaying.nextOperation();
+				Portal.nextOperation();
 				break;
-			case 5: 
-				new GettingStudent(listOfStudents);
-				Displaying.nextOperation();
+			case 5:  
+				new ListingIndividualStudent(listOfStudents);
+				Portal.nextOperation();
 				break;
 			case 6: 
 				new Sorting(listOfStudents);
-				Displaying.nextOperation();
+				Portal.nextOperation();
 				break;
 			case 7:
 				System.out.println("exit");
