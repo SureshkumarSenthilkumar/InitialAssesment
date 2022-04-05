@@ -13,14 +13,8 @@ public class Portal extends Students {
  
 
 	static void options() {
-		System.out.println("Enter the number to perform opertaion");
-		System.out.println("enter 1 for add student");
-		System.out.println("enter 2 for edit student");
-		System.out.println("enter 3 for delete student");
-		System.out.println("enter 4 for print list of students");
-		System.out.println("enter 5 for getting individual student details");
-		System.out.println("enter 6 for Sorting the list of student");
-		System.out.println("enter 7 for exit");
+		System.out.println("Enter the number to perform opertaion \nEnter 1 for add student \nEnter 2 for edit student \nEnter 3 for delete student "
+				+ "\nEnter 4 for print list of students \nEnter 5 for getting individual student details \nEnter 6 for Sorting the list of student \nEnter 7 for exit");
 	}
 
 	static void nextOperation() {

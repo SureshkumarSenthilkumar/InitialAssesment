@@ -10,9 +10,9 @@ public class Modifying {
 		System.out.println("Enter the id of the student to modify");
 		Scanner scan = new Scanner(System.in);
 		int id = scan.nextInt(); 
-		ListIterator<Students> iterator5 =  listOfStudents.listIterator(); 
-		while(iterator5.hasNext()) {
-			if (iterator5.next().getId() == id) {
+		ListIterator<Students> iterator =  listOfStudents.listIterator(); 
+		while(iterator.hasNext()) {
+			if (iterator.next().getId() == id) {
 				System.out.println("Enter the id ");
 				int rollno = scan.nextInt();
 				System.out.println("Enter the name ");
@@ -21,7 +21,7 @@ public class Modifying {
 				String standard = scan.next(); 
 				System.out.println("Enter the mark ");
 				int mark = scan.nextInt(); 
-				iterator5.set(new Students(rollno, name ,standard, mark));
+				iterator.set(new Students(rollno, name ,standard, mark));
 				System.out.println("Student " + name +  " edited"); 
 			}
 			else {

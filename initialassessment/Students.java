@@ -17,33 +17,6 @@ public class Students implements Comparable<Students>{
 		return id;
 	}
 
-	public void setId(int id) {
-		this.id = id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getStandard() {
-		return standard;
-	}
-
-	public void setStandard(String standard) {
-		this.standard = standard;
-	}
-
-	public int getMarks() {
-		return marks;
-	}
-
-	public void setMarks(int marks) {
-		this.marks = marks;
-	}
 
 	@Override
 	public String toString() {

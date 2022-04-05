@@ -3,17 +3,14 @@ package com.tyss.initialassessment;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.InputMismatchException;
-import java.util.Iterator;
 import java.util.Scanner;
 
 public class Sorting {
 	Sorting(ArrayList<Students> listOfStudents) throws InputMismatchException{
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Enter the method you want to sort the students list");
-		System.out.println("Enter the 1 for sort by id");
-		System.out.println("Enter the 2 for sort by name");
-		System.out.println("Enter the 3 for sort by marks");
-		
+		System.out.println("Enter the method you want to sort the students list \nEnter the 1 for sort by id "
+				+ "\nEnter the 2 for sort by name \nEnter the 3 for sort by marks");
+		 
 		SortById sortById = new SortById();
 		SortByName sortByName = new SortByName(); 
 		SortByMarks sortByMarks = new SortByMarks();
@@ -39,4 +36,6 @@ public class Sorting {
 		} 
 		new Listing(listOfStudents); 
 	}
+
+	 
 }

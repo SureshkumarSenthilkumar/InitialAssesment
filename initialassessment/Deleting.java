@@ -13,12 +13,13 @@ public class Deleting {
 		int id = scan.nextInt(); 
 		Iterator<Students> iterator =  listOfStudents.iterator();
 		while(iterator.hasNext()) {
-			if (iterator.next().id == id) {
+			Students student = iterator.next();
+			if (student.id == id) {
 				iterator.remove();
-				System.out.println("Student " + id + " deleted");
-			}
-			else {
-				System.out.println("Id not present");
+				System.out.println("Student " + student.name + " deleted");
+				break;
+			}else {
+				System.out.println(" not present");
 			}
 		}   
 	}
